@@ -11,9 +11,9 @@ using System.IO;
 
 namespace MetinBelgesiOlusturma
 {
-    public partial class Form1 : Form
+    public partial class frm_olustur : Form
     {
-        public Form1()
+        public frm_olustur()
         {
             InitializeComponent();
         }
@@ -24,13 +24,23 @@ namespace MetinBelgesiOlusturma
         {
             dosyaAdi = textBox2.Text;
             sw = File.CreateText(dosyaYolu + "\\" + dosyaAdi + ".txt");
+            sw.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frm_ana frm=new frm_ana();
+            frm.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            folderBrowserDialog1.ShowDialog();
+            if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            { 
             dosyaYolu = folderBrowserDialog1.SelectedPath.ToString();
             textBox1.Text = dosyaYolu;
+            }
         }
     }
 }

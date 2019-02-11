@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_kaydet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_kaydet.Designer.cs">
+      <DependentUpon>frm_kaydet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_oku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_oku.Designer.cs">
+      <DependentUpon>frm_oku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_olustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_olustur.Designer.cs">
+      <DependentUpon>frm_olustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ana.Designer.cs">
+      <DependentUpon>frm_ana.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frm_kaydet.resx">
+      <DependentUpon>frm_kaydet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_oku.resx">
+      <DependentUpon>frm_oku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_olustur.resx">
+      <DependentUpon>frm_olustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ana.resx">
+      <DependentUpon>frm_ana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
